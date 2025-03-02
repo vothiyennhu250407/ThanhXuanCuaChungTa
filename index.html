@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Xuân Của Chúng Ta</title>
+    <link rel="website icon" type="png" href="Logo lớp.png">
+    <link rel="stylesheet" href="trangtonghop.css">
+</head>
+<body>
+    <div class="header">
+    <img src="Thanhxuan.png" alt="Banner" class="full-width-banner">
+    </div>
+    
+    <div class="navbar">
+        <ul class="menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="#Top1">Giới thiệu</a></li>
+        <li><a href="thanhvien.html">Thành viên lớp</a></li>
+        <li><a href="#">Mốc hành trình</a>
+             <ul class="sub_menu">
+                <li class="b"><a href="Lop10.html"> Lớp 10</a></li>
+                <li class='b'><a href="Lop11.html">Lớp 11</a></li>
+                <li class="b"><a href="Lop12.html">Lớp 12</a></li>
+            </ul>
+        </li>
+        <li><a href="#Top2">Liên hệ</a></li>
+        </ul>
+    </div>
+
+    <div class="carousel">
+        <img src="5.png" class="active" alt="Slide 1">
+        <img src="6.png" alt="Slide 2">
+        <img src="7.png" alt="Slide 3">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".carousel img");
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove("active"));
+            slides[index].classList.add("active");
+        }
+        function prevSlide() {
+            slideIndex = (slideIndex > 0) ? slideIndex - 1 : slides.length - 1;
+            showSlide(slideIndex);
+        }
+        function nextSlide() {
+            slideIndex = (slideIndex < slides.length - 1) ? slideIndex + 1 : 0;
+            showSlide(slideIndex);
+        }
+    </script>
+    </div>
+  
+<body>
+
+    <h1 style="text-align: left; margin-left: 140px;margin-top:50px;">HOẠT ĐỘNG NỔI BẬT:</h1>
+    <div class="news-container">
+        <div class="news-item">
+            <img src="thanhlich12.jpg" alt="Tin 1">
+            <div class="news-content">
+                <div class="news-category"><a href="dGddth12.html">Mùa Giai Điệu Tuổi Hồng - Thanh Lịch Cuối Cùng Đầy Trọn Vẹn</a></div>
+                <div class="news-title">Thoáng cái mà chúng mình đã cùng nhau đi qua 3 mùa Giai Điệu Tuổi Hồng. Ở lần cuối này, tập thể lớp 12H quyết tâm để lại dấu ấn rực rỡ dưới ánh đèn sân khấu. Đền đáp cho bao mồ hôi, công sức và nỗ lực, chúng mình đã xuất sắc giành được...</div>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <img src="hococ.jpeg" alt="Tin 2">
+            <div class="news-content">
+                <div class="news-category"><a href="Hococ.html">Hồ Cốc - Những Ngọn Sóng Mang Theo Dư Âm Của Một Thời Rực Rỡ!</a></div>
+                <div class="news-title">"Thanh xuân sẽ không bao giờ trở lại, nhưng những chuyến đi của ngày ấy sẽ mãi in dấu trong tim." Và chúng mình sẽ chẳng bao giờ quên được chuyến đi Hồ Cốc ngày ấy, chuyến đi mà có lẽ, bất kỳ thành viên nào của lớp 12 Hóa cũng sẽ nhớ mãi...</div>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <img src="thanhlich11.jpg" alt="Tin 3">
+            <div class="news-content">
+                <div class="news-category"><a href="gddth11.html">Bùng Nổ! Ẵm Trọn 2 Giải Nhất Tại GĐTH - Hùng Vương Những Mùa Nhớ</a></div>
+                <div class="news-title">Mùa Giai Điệu Tuổi Hồng năm ấy quả là một mùa đầy đáng nhớ với tất cả thành viên lớp Hóa K27 khi chúng mình đã ẵm trọn cả 2 giải Nhất: Nhất phần thi Hát và Nhất phần thi thanh lịch. Ngạo nghễ 11H!...</div>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <img src="comy2011.jpg" alt="Tin 4">
+            <div class="news-content">
+                <div class="news-category"><a href="bocapvang.html">Ngày Nhà Giáo Việt Nam 20/11: Tri Ân Những Người Lái Đò Thầm Lặng</a> </div>
+                <div class="news-title">Thời gian thoáng chốc trôi đi, thế mà giờ đây chúng mình đã là những học sinh cuối cấp. Trên hành trình 3 năm ấy, đã có những người thầy, người cô đã luôn đồng hành, dìu dắt chúng mình đi qua từng chặng đường của cuộc sống...</div>
+            </div>
+        </div>
+    </div>
+    <div id="Top1">
+        <hr style="border: 1px solid #A3C1DA; margin: 5px 140px;">
+        <h1 style="margin-left: 140px";>GIỚI THIỆU:</h1>
+        <p><strong class="title2">Chào mừng các bạn đã đến với trạm lưu giữ thanh xuân của Hóa K27!</strong></p>
+        <p style="font-size: 20px; text-align: center; display: block;"><em>"Thanh xuân giống như một cơn mưa rào, dù từng ướt lạnh, ta vẫn muốn đắm mình trong đó lần nữa."</em></p>
+        <div>
+        <img src="1.jpg" alt="Banner" class="full-width-banner">
+        <img src="2.png" alt="Banner" class="full-width-banner">
+        <img src="3.jpg" alt="Banner" class="full-width-banner">
+        </div>
+        <p style="font-size: 22px; text-align:center;margin: 30px "><em>"Dù mai này có đi xa đến đâu, chỉ cần ngoảnh lại, chúng mình vẫn luôn ở đó – trong những ngày thanh xuân rực rỡ nhất."</em></p>
+    </div>
+    </div>
+    <div id="Top2" style="color: none">.</div>
+    <footer>
+        <div class="footer1">
+            <div class="footer__contact">
+                <h4><i>Cảm ơn vì đã trở thành một phần thanh xuân của nhau!</i></h4>
+                <div class="row">
+                    <div class="col">
+                        <h2>Thông tin liên hệ:</h2>
+                        <div class="footer__contact">
+                            <a href="tel: 901234567"><i class="fa-solid fa-phone"> <label class="dinh"> 0986378751</label></i>
+                            </a>
+                            <br><br>
+                            <a href="mailto:10h2022025@gmail.com"><i class="fa-solid fa-envelope"><label class="dinh"> 10h2022025@gmail.com</label></i>
+                            </a>
+                        </div>
+                        <br>
+                        <h2>Ngày cập nhật mới nhất:</h2>
+                        <p>27/02/2025</p>
+                    </div>
+                    <div class="col">
+                        <h2>Nhóm tác giả</h2>
+                        <div class="footer__heading--p2">
+                            <p>Võ Thị Yến Như</p>
+                            <p>Hà Minh Anh</p>
+                            <p>Cù Khắc Tâm Thiện</p>
+                            <p>Đỗ Ngọc Quang Vinh</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h2>Hòm thư góp ý:</h2>
+                        <form action="cảm ơn góp ý.html" method="get">
+                            Email:<br><br> <input type="text" name="txtemail">
+                            <br>
+                            <br>
+                            <label>Gửi góp ý của bạn tại đây nhé: <br><br><textarea name = "txtcomment" rows = "3" cols = "40"></textarea></label>
+                            <br>
+                            <br>
+                            <input type="submit" name="dk" value="Gửi">
+                        </form>
+                    </div>
+                </div>
+                <script src="https://kit.fontawesome.com/cf0f31fa2c.js " crossorigin="anonymous "></script>
+    </footer>
+</body>
+</html>
